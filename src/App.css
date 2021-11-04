@@ -1,1 +1,67 @@
 /* Other rules */
+
+* {
+    box-sizing: border-box !important;
+    font-family: 'Segoe UI' !important;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+header {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    border: 1px solid white;
+}
+
+main {
+    height: 80vh;
+    color: white;
+    border: 1px solid white;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    border: 1px solid white;
+}
+
+footer > span {
+    font-weight: bold;
+}
+
+.form-structure {
+    height: 100%;
+    width: 400px;
+    color: white;
+    margin: auto;
+    border: 1px solid white;
+}
+
+.form-components {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.form-components > span {
+    padding-bottom: 10px;
+}
+
+.form-components > input {
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.result {
+    height: 300px;
+    width: 300px;
+    background-color: khaki;
+}

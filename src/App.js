@@ -1,9 +1,10 @@
 import "./App.css";
+import Content from "./components/Content";
 
 function App() {
   return (
     <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
+      <Content />
     </div>
   );
 }
