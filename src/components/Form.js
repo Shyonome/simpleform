@@ -1,16 +1,17 @@
-import Result from "./Result";
-
-const Form = ({ username, setUsername, email, setEmail, password, setPassword, confirmPassword, setConfirmPassword }) => {
+const Form = ({ username, setUsername, email, setEmail, password, setPassword, confirmPassword, setConfirmPassword, state, setState }) => {
 
     const checkSubmit = (event) => {
         event.preventDefault();
         if (password !== confirmPassword) {
             alert("Vos deux mots de passe ne sont pas identiques");
+        } else if (password === confirmPassword 
+            && (password !== "" && confirmPassword !== "")) {
+            setState(true);
         }
     }
 
     return (
-        <div className = {`form-structure`}>
+        <div className = "form-structure">
             <form className = "form-components" onSubmit = {checkSubmit}>
 
                 <span>Name</span>
@@ -37,7 +38,7 @@ const Form = ({ username, setUsername, email, setEmail, password, setPassword, c
                     setConfirmPassword(event.target.value);
                 }} value = {confirmPassword} />
     
-                <button type="submit"><span>Register</span></button>
+                <button type="submit" ><span>Register</span></button>
     
             </form>
         </div>
