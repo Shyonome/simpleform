@@ -6,12 +6,7 @@ const Result = ({ username, email, password }) => {
             <span>Name : {username}</span>
             <span>Email : {email}</span>
             <span>Password : {password}</span>
-            <button onClick = {() => {
-                return (
-                    <Form username = {username} 
-                    email = {email} password = {password} />
-                )
-            }} >Edit your information</button>
+            <button>Edit your information</button>
         </div>
     );
 }

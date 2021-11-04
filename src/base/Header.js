@@ -2,7 +2,8 @@ const Header = ({  }) => {
     return (
         <div>
             <header>
-                Create account
+                <span>Create account</span>
+                <span className = {`hidden`} >Result</span>
             </header>
         </div>
     );

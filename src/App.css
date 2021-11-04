@@ -20,7 +20,7 @@ header {
 }
 
 main {
-    height: 80vh;
+    height: 100%;
     color: white;
     border: 1px solid white;
 }
@@ -37,7 +37,7 @@ footer > span {
 }
 
 .form-structure {
-    height: 100%;
+    height: 80vh;
     width: 400px;
     color: white;
     margin: auto;
@@ -64,4 +64,12 @@ footer > span {
     height: 300px;
     width: 300px;
     background-color: khaki;
+}
+
+.hide {
+    display: none;
+}
+
+.display {
+    display: flex;
 }
