@@ -19,7 +19,7 @@ const Main = ({ state, setState }) => {
                 confirmPassword = {confirmPassword} 
                 setConfirmPassword = {setconfirmPassword} state = {state} setState = {setState} />
                 : <Result username = {username} 
-                email = {email} password = {password} />}
+                email = {email} password = {password} setState = {setState} />}
             </main>
         </div>
     );

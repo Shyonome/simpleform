@@ -60,10 +60,35 @@ footer > span {
     border: 1px solid rgb(204, 204, 204);
 }
 
+.result-structure {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .result {
     height: 300px;
     width: 300px;
-    background-color: khaki;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-color: grey;
+}
+
+.result > div {
+    height: 50%;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-color: indianred;
+}
+
+.result > div > span {
+    margin-bottom: 15px;
 }
 
 .hide {
@@ -72,4 +97,6 @@ footer > span {
 
 .display {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
